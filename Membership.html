@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membership</title>
+    <link rel="icon" href="Icon\warna.png" type="image/x-icon">
+    <link rel="stylesheet" href="Asyik.css">
+    <script src="https://kit.fontawesome.com/af0056feba.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js">
+    </script>
+</head>
+
+<body>
+
+    <div class="logo">
+    </div>
+
+    <image class="imglogo" src="Icon\warna.png" height=100px width=100px></image>
+
+    <ul id="nav">
+        <li class="one"><a href="#" id="warnagrey">Home</a></li>
+        <li><a href="#" id="warnagrey">Produk <i class="fas fa-caret-down"></i></a>
+            <ul class="subproduk">
+                <li><a href="#">Bimbingan Offline (BILOF)<br>
+                        Lorep ipsum</a></li>
+                <li><a href="#">Bimbingan Online (Bilen)<br>
+                        Lorep ipsum</a></li>
+                <li><a href="#">Project Asyik (POSIK)<br>
+                        Lorep ipsum</a></li>
+            </ul>
+        </li>
+        <li><a href="#" id="warnagrey">Blog</a></li>
+        <li><a href="#" id="warnagrey">Panduan</a></li>
+        <li><a href="#" id="warnagrey">Kolaborasi</a></li>
+        <li><a href="#" class="hd-active">Membership</a></li>
+        <li><a href="#" id="warnagrey">Event</a></li>
+        <li class="masuk"><a href="#" id="warnahitam">Masuk</a></li>
+    </ul>
+
+    <div class="logo"></div>
+
+    <div class="slideshow-membership">
+
+        <div class="mySlides fade">
+            <img src="Icon\gabung-membership.png"
+                style="vertical-align: middle;height: 850px;width: 100%; object-fit:scale-down;">
+            <h2>Ayo gabung Membership</h2>
+            <p>Banyak manfaat jika anda bergabung dengan kami</p>
+        </div>
+
+
+        <div class="mySlides fade">
+            <img src="Icon\Pro.png" style="vertical-align: middle;height: 850px;width: 100%; object-fit:scale-down;">
+            <h2>Membership : Pro</h2>
+            <p>Banyak manfaat jika anda bergabung dengan kami</p>
+            <a href="#pro" class="gabung-kami-but">Daftar Pro</a>
+        </div>
+
+        <div class="mySlides fade">
+            <img src="Icon\pro+.png" style="vertical-align: middle;height: 850px;width: 100%; object-fit:scale-down;">
+            <h2>Membership : Pro+</h2>
+            <a href="#pro+" class="gabung-kami-but">Daftar Pro+</a>
+        </div>
+
+        <div class="mySlides fade">
+            <img src="Icon\ultimate-pro.png"
+                style="vertical-align: middle;height: 850px;width: 100%; object-fit:scale-down;">
+            <h2>Membership : Ultimate Pro</h2>
+            <a href="#ult-pro" class="gabung-kami-but">Daftar Ultimate Pro</a>
+        </div>
+
+        <a class="prev" onclick="plusSlide(-1)"><i class="fas fa-chevron-left"></i></a>
+        <a class="next" onclick="plusSlide(1)"><i class="fas fa-chevron-right"></i></a>
+
+        <div class="titik">
+            <span class="dot" onclick="curentSlide(1)"></span>
+            <span class="dot" onclick="curentSlide(2)"></span>
+            <span class="dot" onclick="curentSlide(3)"></span>
+            <span class="dot" onclick="curentSlide(4)"></span>
+        </div>
+
+    </div>
+
+    <script>
+        var slideIndex = 1;
+        showSlide(slideIndex);
+
+        function plusSlide(n) {
+            showSlide(slideIndex += n);
+        }
+
+        function curentSlide(n) {
+            showSlide(slideIndex = n);
+        }
+
+        function showSlide(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = slides.length
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+
+    <div class="membership-content">
+
+        <div class="membership-adalah">
+            <h2>Membership</h2>
+            <p>Membership adalah fitur khusus tambahan untuk anda dalam menunjang kreatifitas dan
+                pembelajaran anda.
+            </p>
+            <img src="Icon\membership-content1.png">
+        </div>
+
+        <div class="kenapa-membership">
+            <img src="Icon\kenapa-membership.png">
+            <diV>
+            <h2>Kenapa harus memilih membership</h2>
+            <p>karena Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro ab labore itaque tempore enim. Voluptate, cupiditate aspernatur. Eligendi itaque, aspernatur enim labore reprehenderit, voluptates minus magnam possimus eos distinctio accusamus.
+            </p>
+            </diV>
+        </div>
+
+        <div class="kenapa-kami">
+            <div>
+            <h2>Kenapa harus Kami</h2>
+            <p>Karena Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus optio cum quaerat quibusdam eaque consequuntur, minima dicta. Molestiae modi odit adipisci? Dolorum, impedit qui eum labore perferendis sequi error dolores.
+            </p>
+            </div>
+            <img src="Icon\kenapa-membership.png">
+        </div>
+
+        <div class="membership-adalah">
+            <h2>Ayo Gabung Sekarang Juga</h2>
+            <img src="Icon\membership-content1.png">
+        </div>
+
+        <div id="pro" class="gabung-membership">
+            <img src="Icon\Pro.png">
+            <diV class="gabung-membership-content">
+                <h2>Pro</h2>
+                <p><i class="far fa-check-square"></i> Hebat</p>
+                <p><i class="far fa-check-square"></i> Hebat</p>
+                <p><i class="far fa-check-square"></i> Hebat</p>
+                <p><i class="far fa-check-square"></i> Hebat</p>
+                <div class="harga">
+                    <a href="#" class="but-membership1">Rp.20.000/bulan</a>
+                    <a class="atau">atau</a>
+                    <a href="#" class="but-membership2">Rp.200.000/tahun</a>
+                </div>
+            </diV>
+        </div>
+
+        <div id="pro+" class="gabung-membership">
+            <img src="Icon\pro+.png">
+            <diV class="gabung-membership-content">
+                <h2>Pro</h2>
+                <p><i class="far fa-check-square"></i> Hebat</p>
+                <p><i class="far fa-check-square"></i> Hebat</p>
+                <p><i class="far fa-check-square"></i> Hebat</p>
+                <p><i class="far fa-check-square"></i> Hebat</p>
+                <div class="harga">
+                    <a href="#" class="but-membership1">Rp.20.000/bulan</a>
+                    <a class="atau">atau</a>
+                    <a href="#" class="but-membership2">Rp.200.000/tahun</a>
+                </div>
+            </diV>
+        </div>
+
+        <div id="ult-pro" class="gabung-membership">
+            <img src="Icon\ultimate-pro.png">
+            <diV class="gabung-membership-content">
+                <h2>Ultimate Pro +</h2>
+                <p><i class="far fa-check-square"></i> Hebat</p>
+                <p><i class="far fa-check-square"></i> Hebat</p>
+                <p><i class="far fa-check-square"></i> Hebat</p>
+                <p><i class="far fa-check-square"></i> Hebat</p>
+                <div class="harga">
+                    <a href="#" class="but-membership1">Rp.20.000/bulan</a>
+                    <a class="atau">atau</a>
+                    <a href="#" class="but-membership2">Rp.200.000/tahun</a>
+                </div>
+            </diV>
+        </div>
+
+    </div>
+
+    <footer class="asyik-footer">
+        <div class="footer1">
+            <ul>
+                <li class="subfooter">SINAU.ASYIK</li>
+                <li><a href="#" id="warnaputih">Bilen</a></li>
+                <li><a href="#" id="warnaputih">Bilof</a></li>
+                <li><a href="#" id="warnaputih">Posik</a></li>
+            </ul>
+        </div>
+        <div class="footer2">
+            <ul>
+                <li class="subfooter">About</li>
+                <li><a href="#" id="warnaputih">We're</a></li>
+                <li><a href="#" id="warnaputih">Our</a></li>
+                <li><a href="#" id="warnaputih">Blog Post</a></li>
+                <li><a href="#" id="warnaputih">Help</a></li>
+            </ul>
+        </div>
+        <div class="footer3">
+            <ul>
+                <li class="subfooter">Panduan</li>
+                <li><a href="#" id="warnaputih">About us</a></li>
+                <li><a href="#" id="warnaputih">Our clients</a></li>
+                <li><a href="#" id="warnaputih">Legal notice</a></li>
+            </ul>
+        </div>
+        <div class="footer4">
+            <ul>
+                <li class="subfooter">Hubungi Kami</li>
+                <li><a href="#" id="HK">
+                        <image src="Icon\whatsapp.png" class="icon-footer"></image>+123 456
+                    </a></li>
+                <li><a href="#" id="HK">
+                        <image src="Icon\gmail.png" class="icon-footer"></image>@gmail
+                    </a></li>
+                <li><a href="#" id="HK">
+                        <image src="Icon\telepon.png" class="icon-footer"></image>+123
+                    </a></li>
+                <li><a href="#" id="HK">
+                        <image src="Icon\Location.png" class="icon-footer"></image>Lokasi
+                    </a></li>
+            </ul>
+        </div>
+
+        <div class="footer-bot">
+            <a href="#" class="icon-bot-link">
+                <image src="Icon\facebook.png" class="icon-footer-bot"></image>
+            </a>
+            <a href="#" class="icon-bot-link">
+                <image src="Icon\instagram.png" class="icon-footer-bot"></image>
+            </a>
+            <a href="#" class="icon-bot-link">
+                <image src="Icon\youtube.png" class="icon-footer-bot"></image>
+            </a>
+        </div>
+
+        <div class="copyright">
+            <p>sinau.asyik &copy; 2021</p>
+        </div>
+    </footer>
+</body>
+
+</html>

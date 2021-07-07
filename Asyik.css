@@ -1,0 +1,954 @@
+/* Universal */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+body {
+    font-family: roboto;
+    margin: 0;
+    overflow: auto;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+#warnaputih {
+    color: white;
+    text-decoration: none;
+}
+
+#warnaputih:hover {
+    color: orange;
+}
+
+#warnagrey {
+    color: grey;
+}
+
+#warnahitam {
+    color: black;
+}
+
+/*Universal end*/
+
+/*header*/
+
+
+.logo {
+    background-color: white;
+    width: 100%;
+    height: 20px;
+    overflow: visible;
+    position: relative;
+}
+
+.imglogo {
+    top: 0;
+    float: left;
+    margin-left: 15%;
+    position: absolute;
+    z-index: 5;
+}
+
+#nav li {
+    float: left;
+    display: block;
+    background-color: white;
+    position: relative;
+}
+
+#nav li a {
+    display: block;
+    text-align: center;
+    padding: 5px 12px;
+    text-decoration: none;
+}
+
+#nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    background-color: white;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    display: inline-block;
+    width: 98.95%;
+    z-index: 3;
+}
+
+
+#nav li.masuk {
+    border: 1px solid purple;
+    border-radius: 15px;
+    padding: 0 10px;
+    float: right;
+}
+
+#nav li.one {
+    margin-left: 45%;
+}
+
+#nav .produk:hover {
+    padding: 2px 12px;
+    color: purple;
+    border-bottom: 2px solid purple;
+    transition: 0.25s;
+}
+
+#nav ul {
+    position: absolute;
+    margin-top: 0;
+    padding: 0;
+    left: 0;
+    display: none;
+    float: none;
+    overflow: visible;
+    z-index: 3;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0.5, 0.2), 0 6px 20px 0 rgba(0, 0, 0.5, 0.2);
+}
+
+#nav li:hover ul {
+    display: block;
+    overflow: visible;
+}
+
+.subproduk li {
+    display: block;
+    position: relative;
+}
+
+.subproduk li a {
+    display: block;
+    width: 200px;
+}
+
+.subproduk li a:hover{
+    background-color: purple;
+    color: white;
+}
+
+ul.subproduk li:nth-of-type(2){
+    background-color: silver;
+}
+
+.hd-active {
+    border-bottom: 2px solid purple;
+    color: purple;
+    padding: 4px 12px;
+}
+
+#warnagrey:hover {
+    padding: 2px 12px;
+    color: purple;
+    border-bottom: 2px solid purple;
+    transition: 0.25s;
+}
+
+#nav .hd-active:hover {
+    padding: 2px 12px;
+    transition: 0.25s;
+}
+
+#nav li.masuk:hover {
+    background-color: orange;
+    transition: 0.5;
+    padding: 0px 12px;
+    border: 1px solid orange;
+}
+
+/*header end*/
+
+/*blog section*/
+
+.main-content-blog {
+    text-align: center;
+}
+
+.upperclass {
+    position: relative;
+    width: 100%;
+    margin: auto;
+}
+
+.upperclass img {
+    width: 100%;
+    height: 850px;
+    object-fit: cover;
+    margin: auto;
+}
+
+.sect {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.sect h2 {
+    font-size: 40px;
+
+}
+
+.sect p {
+    font-size: 20px;
+}
+
+.upperclass img {
+    opacity: 85%;
+}
+
+div.title-main-blog {
+    margin-top: 100px;
+    text-align: left;
+    margin-left: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#post-kami {
+    font-size: 40px;
+}
+
+div.sorting-blog {
+    margin-top: 2.5px;
+    float: right;
+    margin-right: 150px;
+}
+
+.sort-button {
+    background-color: rgb(129, 38, 214);
+    color: white;
+    padding: 2px 10.5px;
+    text-decoration: none;
+}
+
+.sort-button:hover {
+    background-color: orange;
+}
+
+.sort-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(152, 46, 250);
+    z-index: 1;
+    margin-top: 3px;
+}
+
+.sort-content a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 12px 16px;
+}
+
+.sort-content a:hover {
+    background-color: orange;
+}
+
+.sort-drop:hover div.sort-content {
+    display: block;
+}
+
+div.blog-main {
+    margin: 50px 100px;
+    vertical-align: top;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.card {
+    max-width: 465px;
+    min-width: 340px;
+    background-color: white;
+    margin: 50px;
+    max-height: 800px;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0.5, 0.2), 0 6px 20px 0 rgba(0, 0, 0.5, 0.2);
+    border-radius: 5px;
+    flex: 1 25%;
+}
+
+div.card:hover {
+    box-shadow: none;
+    border: 1px solid black;
+    transition: 1.5s;
+}
+
+div.card-content {
+    padding: 20px;
+}
+
+#author-blog {
+    float: left;
+    font-size: 15px;
+}
+
+#author {
+    text-decoration: none;
+}
+
+#author:hover {
+    color: orange;
+}
+
+#date-post {
+    float: right;
+    font-size: 15px;
+    color: orange;
+}
+
+#post-title {
+    border: 1px solid white;
+    margin-top: 50px;
+}
+
+#post-content {
+    font-size: 13px;
+    text-align: left;
+    border: 1px solid white;
+    height: 25px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.int-post {
+    text-align: left;
+    font-size: 12px;
+    margin-bottom: 20px;
+    color: rgb(184, 181, 181);
+}
+
+.int-post-content {
+    margin: 0 10px;
+}
+
+#enter-post {
+    text-decoration: none;
+    color: skyblue;
+}
+
+#enter-post:hover {
+    color: orange;
+}
+
+.pagination {
+    display: inline-block;
+    margin-bottom: 100px;
+}
+
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.pagination a.page-active {
+    background-color: purple;
+    color: white;
+}
+
+.pagination a:hover:not(.page-active, .not-active) {
+    background-color: orange;
+}
+
+/*blog section end*/
+
+
+/*kolaborasi section*/
+
+.mySlides {
+    display: none;
+}
+
+.slideshow-collab {
+    width: 100%;
+    position: relative;
+    margin: auto;
+    height: 850px;
+}
+
+.mySlides.fade h2 {
+    font-size: 40px;
+    top: 20%;
+    left: 20%;
+    position: absolute;
+    color: white;
+}
+
+.mySlides.fade p {
+    font-size: 20px;
+    top: 40%;
+    left: 20%;
+    position: absolute;
+    color: white;
+}
+
+.gabung-kami-but {
+    background-color: purple;
+    color: white;
+    padding: 12px 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    top: 70%;
+    position: absolute;
+    right: 20%;
+}
+
+.gabung-kami-but:hover {
+    background-color: orange;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    color: purple;
+    font-weight: 18px;
+    transition: 0.6s ease;
+    user-select: none;
+    font-size: 40px;
+    border-radius: 10px;
+}
+
+.next {
+    right: 0;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: orange;
+    color: white;
+}
+
+.slideshow-collab div.titik {
+    position: absolute;
+    bottom: 5%;
+    z-index: 1;
+    left: 48.5%;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    background-color: purple;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    border: 1px solid purple;
+}
+
+
+.active {
+    background: white;
+}
+
+.dot:hover:not(.active) {
+    background-color: orange;
+}
+
+.fade {
+    animation-name: fade;
+    animation: 1.5s;
+}
+
+.collab-content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin: 200px 200px;
+}
+
+.collab-content div {
+    margin: 100px 0;
+}
+
+.collab-content h2 {
+    font-size: 40px;
+}
+
+.collab-content p {
+    font-size: 30px;
+    text-align: justify;
+}
+
+.collab-content img {
+    border-radius: 20% 0;
+    width: 750px;
+}
+
+div.kami-kerja {
+    display: flex;
+    flex-direction: row;
+    margin: 100px 0;
+    justify-content: center;
+}
+
+.kami-kerja div {
+    height: 250px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 100px;
+    justify-content: center;
+    border-radius: 10%;
+    color: white;
+}
+
+.kami-kerja div:nth-last-child(n+1) {
+    background-color: orange;
+}
+
+.kami-kerja div:nth-last-child(n+2) {
+    background-color: purple;
+}
+
+.fas.fa-graduation-cap,
+.fas.fa-code,
+.fas.fa-video,
+.fas.fa-briefcase {
+    font-size: 50px;
+}
+
+.kami-kerja div a {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.email-kami {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0.5, 0.2), 0 6px 20px 0 rgba(0, 0, 0.5, 0.2);
+    padding: 100px 200px;
+    border-radius: 30px;
+}
+
+div.email-kami input[type=text],
+div.email-kami input[type=email] {
+    width: max(100%);
+    padding: 12px 16px;
+    border-radius: 10px;
+    display: in;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    margin: 25px 0;
+}
+
+div.email-kami input[type=submit] {
+    background-color: purple;
+    width: 200px;
+    color: white;
+    padding: 12px 16px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 100px;
+    cursor: pointer;
+}
+
+div.email-kami input[type=submit]:hover {
+    background-color: orange;
+}
+
+/*kolaborasi section end*/
+
+
+/*Membership section*/
+.slideshow-membership {
+    width: 100%;
+    position: relative;
+    margin: auto;
+    height: 850px;
+}
+
+.slideshow-membership div.mySlides.fade h2 {
+    color: purple;
+    left: 10%;
+}
+
+.slideshow-membership div.mySlides.fade p {
+    color: purple;
+    left: 10%;
+}
+
+.slideshow-membership div.titik {
+    position: absolute;
+    bottom: 5%;
+    z-index: 1;
+    left: 48%;
+}
+
+.membership-content {
+    text-align: center;
+    margin: 200px 100px;
+}
+
+.membership-content h2 {
+    color: orange;
+}
+
+.membership-content p {
+    color: purple;
+}
+
+.membership-content div {
+    margin: 100px 0;
+}
+
+.membership-content img {
+    height: 500px;
+    max-width: 500px;
+}
+
+.membership-adalah {
+    text-align: center;
+}
+
+.kenapa-membership {
+    text-align: left;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+
+.kenapa-membership>* {
+    flex-basis: 100%;
+}
+
+.kenapa-kami {
+    text-align: right;
+    display: flex;
+    flex-direction: row;
+}
+
+.kenapa-kami div {
+    text-align: left;
+    margin-inline-start: 100px;
+}
+
+.kenapa-kami>* {
+    flex-basis: 100%;
+}
+
+
+div.gabung-membership {
+    position: relative;
+    max-width: 1000px;
+    text-align: left;
+    display: flex;
+    padding: 10px;
+    margin: 100px auto;
+    min-width: 400px;
+    flex-direction: row;
+    box-shadow: 0 4px 8px 0 purple, 0 6px 20px 0 orange;
+    border-radius: 20px;
+}
+
+div.gabung-membership>* {
+    flex-basis: 100%;
+}
+
+.gabung-membership-content {
+    max-width: 900px;
+}
+
+.harga {
+    display: inline-block;
+}
+
+.but-membership1 {
+    background-color: purple;
+    color: white;
+    text-decoration: none;
+    padding: 16px 12px;
+    border-radius: 10px;
+}
+
+.but-membership2 {
+    background-color: purple;
+    color: white;
+    text-decoration: none;
+    padding: 16px 12px;
+    border-radius: 10px;
+}
+
+.but-membership1:hover,
+.but-membership2:hover {
+    background-color: orange;
+}
+
+.atau {
+    margin: 0 50px;
+}
+
+.far.fa-check-square {
+    font-size: 30px;
+    color: orange;
+}
+
+
+/*Membership section end*/
+
+
+/*footer*/
+
+footer {
+    bottom: 0;
+}
+
+.asyik-footer {
+    background-color: purple;
+    padding: 20px 100px 50px;
+    font-size: 18px;
+    line-height: 24px;
+    color: white;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: center;
+}
+
+.asyik-footer .footer1,
+.asyik-footer .footer2,
+.asyik-footer .footer3,
+.asyik-footer .footer4 {
+    display: inline-block;
+    vertical-align: top;
+    margin: 100px;
+}
+
+.asyik-footer .footer1 ul,
+.asyik-footer .footer2 ul,
+.asyik-footer .footer3 ul,
+.asyik-footer .footer4 ul {
+    list-style-type: none;
+    text-align: left;
+}
+
+.asyik-footer .footer1 ul li:not(.subfooter),
+.asyik-footer .footer2 ul li:not(.subfooter),
+.asyik-footer .footer3 ul li:not(.subfooter),
+.asyik-footer .footer4 ul li:not(.subfooter) {
+    margin: 5px 0;
+}
+
+.subfooter {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.icon-footer {
+    width: 20px;
+    height: 20px;
+    padding: 2px;
+    margin-right: 10px;
+    background-color: white;
+    border-radius: 15px;
+}
+
+#HK {
+    color: white;
+    text-decoration: none;
+}
+
+#HK:hover {
+    color: orange;
+}
+
+#HK:hover .icon-footer {
+    filter: opacity(50%);
+}
+
+.icon-footer-bot {
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+    margin: 10px;
+}
+
+.icon-bot-link:hover {
+    filter: grayscale(100%);
+}
+
+.copyright {
+    bottom: 0;
+    font-size: 14px;
+}
+
+/*footer end*/
+
+
+/*responsive*/
+@media screen and (max-width:1600px) {
+    div.card {
+        max-width: 600px;
+    }
+
+}
+
+@media screen and (max-width:1500px) {
+    #nav li.one {
+        margin-left: 40%;
+    }
+
+    .imglogo {
+        margin-left: 10%;
+    }
+
+    .slideshow-membership div.mySlides.fade h2 {
+        top: 0;
+    }
+    
+    .slideshow-membership div.mySlides.fade p {
+        top: 10%
+    }
+}
+
+@media screen and (max-width:1230px) {
+    #nav li.one {
+        margin-left: 30%;
+    }
+
+    .imglogo {
+        margin-left: 5%;
+    }
+
+    div.kami-kerja {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .kami-kerja div {
+        margin: 100px 0;
+    }
+
+    .email-kami {
+        padding: 100px 150px;
+    }
+
+    div.gabung-membership{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gabung-membership-content{
+        align-items: center;
+        min-width: 500;
+    }
+}
+
+@media screen and (max-width:1126px) {
+    #nav li.one {
+        margin-left: 25%;
+    }
+
+    .imglogo {
+        margin-left: 5%;
+    }
+
+    .email-kami {
+        padding: 100px 100px;
+    }
+}
+
+
+@media screen and (max-width:1100px) {
+    div.card {
+        max-width: 800px;
+    }
+}
+
+
+
+@media screen and (max-width:970px) {
+    #nav li.one {
+        margin-left: 15%;
+    }
+
+    .imglogo {
+        margin-left: 0;
+    }
+
+    
+    .kenapa-membership {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .kenapa-kami {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .kenapa-kami div {
+        margin-inline-start: 0;
+    }
+}
+
+@media screen and (max-width:820px) {
+    #nav li.one {
+        margin-left: 10%;
+    }
+
+    .imglogo {
+        margin-left: 0;
+    }
+    
+    .collab-content {
+        margin: 200px 100px;
+    }
+}
+
+@media screen and (max-width:800px) {
+    #nav li.one {
+        margin-left: 0;
+    }
+
+    #nav li {
+        float: none;
+    }
+
+    .imglogo {
+        float: none;
+        position: static;
+        margin-left: 42.5%;
+        border: 1px solid black;
+    }
+
+    #nav {
+        position:inherit;
+    }
+
+    #nav ul {
+        position: static;
+    }
+
+    #nav li.masuk {
+        float: none;
+    }
+
+    .subproduk li a{
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width:800px){
+    .harga {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 50px 0;
+    }
+}
